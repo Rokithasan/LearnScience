@@ -1,2 +1,4 @@
-package com.example.learnscience;public class GrowThings {
+package com.example.learnscience;
+
+public class GrowThings {
 }

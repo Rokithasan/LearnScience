@@ -1,2 +1,4 @@
-package com.example.learnscience;public class Mammals {
+package com.example.learnscience;
+
+public class Mammals {
 }

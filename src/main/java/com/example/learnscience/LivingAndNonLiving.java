@@ -1,2 +1,4 @@
-package com.example.learnscience;public class LivingAndNonLiving {
+package com.example.learnscience;
+
+public class LivingAndNonLiving {
 }

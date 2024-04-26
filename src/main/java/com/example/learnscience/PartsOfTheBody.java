@@ -1,2 +1,4 @@
-package com.example.learnscience;public class PartsOfTheBody {
+package com.example.learnscience;
+
+public class PartsOfTheBody {
 }

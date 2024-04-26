@@ -1,14 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
 
+<AnchorPane prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.learnscience.Palnets">
+   <children>
+      <Line endX="739.0" layoutX="108.0" layoutY="38.0" startX="-47.0" />
+      <Line endX="739.0" layoutX="108.0" layoutY="80.0" startX="-47.0" />
+      <Line endX="-54.5" endY="299.5" layoutX="115.0" layoutY="161.0" startX="-54.5" startY="-123.5" />
+      <Line endX="-52.5" endY="299.5" layoutX="900.0" layoutY="161.0" startX="-52.5" startY="-123.5" />
+      <Line endX="734.0" layoutX="113.0" layoutY="106.0" startX="-52.0" />
+      <Line endX="734.0" layoutX="113.0" layoutY="365.0" startX="-52.0" />
+      <Line endX="734.0" layoutX="113.0" layoutY="404.0" startX="-52.0" />
+      <Line endX="734.0" layoutX="113.0" layoutY="460.0" startX="-52.0" />
+      <Line endX="42.0" endY="23.5" layoutX="50.0" layoutY="437.0" startX="42.0" startY="-32.5" />
+      <Line endX="42.0" endY="23.5" layoutX="520.0" layoutY="437.0" startX="42.0" startY="-32.5" />
+      <Line endX="42.0" endY="23.5" layoutX="768.0" layoutY="437.0" startX="42.0" startY="-32.5" />
+      <Line endX="42.0" endY="23.5" layoutX="310.0" layoutY="437.0" startX="42.0" startY="-32.5" />
+      <Line endX="42.0" endY="23.5" layoutX="557.0" layoutY="437.0" startX="42.0" startY="-32.5" />
+      <Line endX="64.0" endY="144.5" layoutX="242.0" layoutY="220.0" startX="64.0" startY="-113.5" />
+      <Line endX="64.0" endY="134.5" layoutX="257.0" layoutY="230.0" startX="64.0" startY="-123.5" />
+      <Line endX="64.0" endY="134.5" layoutX="497.0" layoutY="230.0" startX="64.0" startY="-123.5" />
+      <Line endX="64.0" endY="134.5" layoutX="512.0" layoutY="230.0" startX="64.0" startY="-123.5" />
+      <Line endX="64.0" endY="134.5" layoutX="767.0" layoutY="230.0" startX="64.0" startY="-123.5" />
+      <Line endX="64.0" endY="134.5" layoutX="11.0" layoutY="230.0" startX="64.0" startY="-123.5" />
+      <AnchorPane layoutX="60.0" layoutY="37.0" prefHeight="42.0" prefWidth="787.0" style="-fx-background-color: #153448;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="379.0" layoutY="13.0" prefHeight="42.0" prefWidth="787.0" text="Palnets" textFill="#dfd0b8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="76.0" layoutY="106.0" prefHeight="259.0" prefWidth="230.0">
+         <children>
+            <ImageView fitHeight="218.0" fitWidth="202.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="321.0" layoutY="106.0" prefHeight="259.0" prefWidth="240.0">
+         <children>
+            <ImageView fitHeight="218.0" fitWidth="202.0" layoutX="18.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="585.0" layoutY="103.0" prefHeight="259.0" prefWidth="246.0">
+         <children>
+            <ImageView fitHeight="224.0" fitWidth="208.0" layoutX="15.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="93.0" layoutY="404.0" prefHeight="27.0" prefWidth="218.0" style="-fx-background-color: #3C5B6F;">
+         <children>
+            <Line endX="42.0" endY="23.5" layoutX="175.0" layoutY="34.0" startX="42.0" startY="-32.5" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="94.0" layoutY="21.0" prefHeight="58.0" prefWidth="218.0" text="Earth" textFill="#dfd0b8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="353.0" layoutY="403.0" prefHeight="56.0" prefWidth="208.0" style="-fx-background-color: #3C5B6F;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="74.0" layoutY="20.0" prefHeight="56.0" prefWidth="208.0" text="Sun" textFill="#dfd0b8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="600.0" layoutY="404.0" prefHeight="57.0" prefWidth="210.0" style="-fx-background-color: #3C5B6F;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="90.0" layoutY="20.0" prefHeight="57.0" prefWidth="210.0" text="Neptune" textFill="#dfd0b8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Line endX="734.0" layoutX="116.0" layoutY="511.0" startX="-52.0" />
+      <Line endX="734.0" layoutX="116.0" layoutY="558.0" startX="-52.0" />
+      <Line endX="42.5" endY="14.5" layoutX="21.0" layoutY="544.0" startX="42.0" startY="-32.5" />
+      <Line endX="42.5" endY="14.5" layoutX="808.0" layoutY="543.0" startX="42.0" startY="-32.5" />
+      <Line endX="42.5" endY="14.5" layoutX="278.0" layoutY="543.0" startX="42.0" startY="-32.5" />
+      <Line endX="42.5" endY="14.5" layoutX="542.0" layoutY="543.0" startX="42.0" startY="-32.5" />
+      <AnchorPane layoutX="61.0" layoutY="511.0" prefHeight="48.0" prefWidth="258.0" style="-fx-background-color: #3C5B6F;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="72.0" layoutY="16.0" prefHeight="48.0" prefWidth="258.0" text="Sun" textFill="#dfd0b8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="315.0" layoutY="510.0" prefHeight="48.0" prefWidth="270.0" style="-fx-background-color: #3C5B6F;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="80.0" layoutY="16.0" prefHeight="48.0" prefWidth="270.0" text="Neptune " textFill="#dfd0b8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="584.0" layoutY="511.0" prefHeight="48.0" prefWidth="270.0" style="-fx-background-color: #3C5B6F;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="83.0" layoutY="16.0" prefHeight="48.0" prefWidth="270.0" text="Earth" textFill="#dfd0b8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>

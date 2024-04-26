@@ -1,2 +1,4 @@
-package com.example.learnscience;public class FindTheCorrectKid {
+package com.example.learnscience;
+
+public class FindTheCorrectKid {
 }
