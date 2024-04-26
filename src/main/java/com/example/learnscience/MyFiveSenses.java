@@ -1,2 +1,4 @@
-package com.example.learnscience;public class MyFiveSenses {
+package com.example.learnscience;
+
+public class MyFiveSenses {
 }

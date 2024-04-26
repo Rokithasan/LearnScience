@@ -1,14 +1,246 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
 
+<AnchorPane prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.learnscience.MyFiveSenses">
+   <children>
+      <Line endX="750.0" layoutX="108.0" layoutY="43.0" startX="-58.0" />
+      <Line endX="748.0" layoutX="110.0" layoutY="89.0" startX="-59.0" />
+      <Line endX="-107.5" endY="530.5" layoutX="158.0" layoutY="129.0" startX="-107.5" startY="-88.5" />
+      <Line endX="-107.5" endY="530.5" layoutX="965.0" layoutY="129.0" startX="-106.5" startY="-86.5" />
+      <Line endX="745.0" layoutX="112.0" layoutY="659.0" startX="-62.0" />
+      <Line endX="-107.5" endY="530.5" layoutX="343.0" layoutY="130.0" startX="-107.5" startY="-41.0" />
+      <Line endX="748.0" layoutX="109.0" layoutY="194.0" startX="-59.0" />
+      <Line endX="748.0" layoutX="109.0" layoutY="311.0" startX="-59.0" />
+      <Line endX="748.0" layoutX="109.0" layoutY="431.0" startX="-59.0" />
+      <Line endX="748.0" layoutX="110.0" layoutY="548.0" startX="-59.0" />
+      <Line endX="561.7928466796875" layoutX="295.0" layoutY="109.0" startX="-59.0" />
+      <Line endX="561.7928466796875" layoutX="295.0" layoutY="174.0" startX="-59.0" />
+      <Line endX="561.7928466796875" layoutX="294.0" layoutY="214.0" startX="-59.0" />
+      <Line endX="561.7928466796875" layoutX="295.0" layoutY="292.0" startX="-59.0" />
+      <Line endX="561.7928466796875" layoutX="296.0" layoutY="332.0" startX="-59.0" />
+      <Line endX="561.7928466796875" layoutX="295.0" layoutY="411.0" startX="-59.0" />
+      <Line endX="561.7928466796875" layoutX="295.0" layoutY="452.0" startX="-59.0" />
+      <Line endX="561.7928466796875" layoutX="295.0" layoutY="528.0" startX="-59.0" />
+      <Line endX="561.7928466796875" layoutX="295.0" layoutY="569.0" startX="-59.0" />
+      <Line endX="561.7928466796875" layoutX="294.0" layoutY="640.0" startX="-59.0" />
+      <Line endX="-107.5" endY="528.5" layoutX="765.0" layoutY="130.0" startX="-107.5" startY="-41.0" />
+      <Line endX="-107.5" endY="528.5" layoutX="597.0" layoutY="130.0" startX="-107.5" startY="-41.0" />
+      <Line endX="-107.5" endY="528.5" layoutX="402.0" layoutY="131.0" startX="-107.5" startY="-41.0" />
+      <AnchorPane layoutX="51.0" layoutY="90.0" prefHeight="67.0" prefWidth="117.0">
+         <children>
+            <ImageView fitHeight="104.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="51.0" layoutY="194.0" prefHeight="116.0" prefWidth="184.0">
+         <children>
+            <ImageView fitHeight="116.0" fitWidth="187.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="51.0" layoutY="311.0" prefHeight="122.0" prefWidth="184.0" />
+      <AnchorPane layoutX="50.0" layoutY="433.0" prefHeight="116.0" prefWidth="184.0">
+         <children>
+            <ImageView fitHeight="122.0" fitWidth="187.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="51.0" layoutY="550.0" prefHeight="110.0" prefWidth="184.0">
+         <children>
+            <ImageView fitHeight="110.0" fitWidth="184.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="235.0" layoutY="108.0" prefHeight="67.0" prefWidth="59.0" style="-fx-background-color: #3C5B6F;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="25.0" prefHeight="67.0" prefWidth="59.0" text="We" textFill="#dfd0b8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="235.0" layoutY="214.0" prefHeight="77.0" prefWidth="59.0" style="-fx-background-color: #3C5B6F;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="9.0" layoutY="17.0" prefHeight="84.0" prefWidth="68.0" text="We" textFill="#dfd0b8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="235.0" layoutY="332.0" prefHeight="77.0" prefWidth="59.0" style="-fx-background-color: #3C5B6F;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="-5.0" prefHeight="77.0" prefWidth="61.0" text="We" textFill="#dfd0b8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="235.0" layoutY="452.0" prefHeight="77.0" prefWidth="59.0" style="-fx-background-color: #3C5B6F;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" prefHeight="77.0" prefWidth="60.0" text="We" textFill="#dfd0b8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="235.0" layoutY="565.0" prefHeight="77.0" prefWidth="59.0" style="-fx-background-color: #3C5B6F;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="19.0" layoutY="-6.0" prefHeight="77.0" prefWidth="78.0" text="We" textFill="#dfd0b8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="294.0" layoutY="107.0" prefHeight="67.0" prefWidth="195.0" style="-fx-background-color: #948979;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="83.0" layoutY="25.0" prefHeight="67.0" prefWidth="195.0" textFill="#3c5b6f" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="294.0" layoutY="215.0" prefHeight="77.0" prefWidth="195.0" style="-fx-background-color: #948979;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="1.0" prefHeight="77.0" prefWidth="209.0" textFill="#3c5b6f" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="294.0" layoutY="332.0" prefHeight="77.0" prefWidth="195.0" style="-fx-background-color: #948979;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="-11.0" prefHeight="77.0" prefWidth="196.0" textFill="#3c5b6f" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="294.0" layoutY="450.0" prefHeight="77.0" prefWidth="195.0" style="-fx-background-color: #948979;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="12.0" prefHeight="79.0" prefWidth="223.0" textFill="#3c5b6f" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="294.0" layoutY="571.0" prefHeight="67.0" prefWidth="195.0" style="-fx-background-color: #948979;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-3.0" layoutY="1.0" prefHeight="68.0" prefWidth="195.0" textFill="#3c5b6f" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="490.0" layoutY="108.0" prefHeight="67.0" prefWidth="167.0" style="-fx-background-color: #3C5B6F;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="37.0" layoutY="-5.0" prefHeight="67.0" prefWidth="167.0" text="with our" textFill="#dfd0b8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="490.0" layoutY="214.0" prefHeight="77.0" prefWidth="167.0" style="-fx-background-color: #3C5B6F;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-24.0" layoutY="15.0" prefHeight="82.0" prefWidth="167.0" text="with our" textFill="#dfd0b8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="490.0" layoutY="332.0" prefHeight="77.0" prefWidth="167.0" style="-fx-background-color: #3C5B6F;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-24.0" layoutY="-12.0" prefHeight="77.0" prefWidth="167.0" text="with our" textFill="#dfd0b8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="490.0" layoutY="450.0" prefHeight="77.0" prefWidth="167.0" style="-fx-background-color: #3C5B6F;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="3.0" prefHeight="77.0" prefWidth="183.0" text="with our" textFill="#dfd0b8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="490.0" layoutY="571.0" prefHeight="67.0" prefWidth="167.0" style="-fx-background-color: #3C5B6F;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="41.0" layoutY="-1.0" prefHeight="67.0" prefWidth="208.0" text="with our" textFill="#dfd0b8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="658.0" layoutY="108.0" prefHeight="67.0" prefWidth="201.0" style="-fx-background-color: #948979;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-23.0" layoutY="5.0" prefHeight="72.0" prefWidth="201.0" text="Label" textFill="#3c5b6f" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="658.0" layoutY="214.0" prefHeight="77.0" prefWidth="201.0" style="-fx-background-color: #948979;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-7.0" prefHeight="77.0" prefWidth="201.0" text="Label" textFill="#3c5b6f" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="658.0" layoutY="332.0" prefHeight="77.0" prefWidth="201.0" style="-fx-background-color: #948979;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-36.0" layoutY="-7.0" prefHeight="77.0" prefWidth="201.0" text="Label" textFill="#3c5b6f" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="658.0" layoutY="451.0" prefHeight="77.0" prefWidth="201.0" style="-fx-background-color: #948979;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-2.0" layoutY="-11.0" prefHeight="77.0" prefWidth="201.0" text="Label" textFill="#3c5b6f" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="658.0" layoutY="571.0" prefHeight="67.0" prefWidth="201.0" style="-fx-background-color: #948979;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="-18.0" prefHeight="67.0" prefWidth="201.0" text="Label" textFill="#3c5b6f" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="50.0" layoutY="42.0" prefHeight="47.0" prefWidth="809.0" style="-fx-background-color: #153448;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="285.0" layoutY="15.0" prefHeight="47.0" prefWidth="809.0" text="My Five  Senses" textFill="#dfd0b8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>
