@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -63,10 +64,37 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
                <children>
-                  <ImageView fitHeight="131.0" fitWidth="201.0" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView fitHeight="134.0" fitWidth="201.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
-                  <ImageView fitHeight="137.0" fitWidth="181.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
-                  <ImageView fitHeight="138.0" fitWidth="181.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <ImageView fx:id="livingImage" fitHeight="131.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PhotosData/Living/cat.jpeg" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="40.0" />
+                     </GridPane.margin></ImageView>
+                  <ImageView fx:id="livingImage1" fitHeight="131.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@PhotosData/Living/cat.jpeg" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="40.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fx:id="livingImage2" fitHeight="131.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@PhotosData/Living/cat.jpeg" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="40.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fx:id="livingImage3" fitHeight="131.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@PhotosData/Living/cat.jpeg" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="40.0" />
+                     </GridPane.margin>
+                  </ImageView>
                </children>
             </GridPane>
          </children>
@@ -74,7 +102,7 @@
       <Line endX="-107.699951171875" endY="1600.144775390625" layoutX="396.0" layoutY="190.0" startX="-107.70420837402344" startY="1330.6802978515625" stroke="#153448" strokeWidth="5.0" AnchorPane.bottomAnchor="260.5" AnchorPane.leftAnchor="447.5" AnchorPane.rightAnchor="444.0" AnchorPane.topAnchor="164.0" />
       <AnchorPane layoutX="461.0" layoutY="157.0" prefHeight="291.0" prefWidth="375.0" AnchorPane.bottomAnchor="262.0" AnchorPane.leftAnchor="461.0" AnchorPane.topAnchor="157.0">
          <children>
-            <GridPane hgap="3.0" layoutX="55.0" layoutY="99.0" prefHeight="287.0" prefWidth="384.0" vgap="4.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <GridPane hgap="3.0" layoutX="55.0" layoutY="99.0" prefHeight="271.0" prefWidth="364.0" vgap="4.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="10.0">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -87,14 +115,38 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
                <children>
-                  <ImageView fitHeight="135.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="nonLivingImage" fitHeight="131.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PhotosData/Living/cat.jpeg" />
+                     </image>
                      <GridPane.margin>
-                        <Insets />
+                        <Insets left="40.0" />
                      </GridPane.margin>
                   </ImageView>
-                  <ImageView fitHeight="139.0" fitWidth="185.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
-                  <ImageView fitHeight="120.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
-                  <ImageView fitHeight="137.0" fitWidth="185.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <ImageView fx:id="nonLivingImage1" fitHeight="131.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@PhotosData/Living/cat.jpeg" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="40.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fx:id="nonLivingImage2" fitHeight="131.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@PhotosData/Living/cat.jpeg" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="40.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fx:id="nonLivingImage3" fitHeight="131.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@PhotosData/Living/cat.jpeg" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="40.0" />
+                     </GridPane.margin>
+                  </ImageView>
                </children>
             </GridPane>
          </children>
@@ -159,5 +211,10 @@
             </GridPane>
          </children>
       </AnchorPane>
+      <Label fx:id="timerLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="365.0" layoutY="87.0" prefHeight="23.0" prefWidth="170.0" text="Label" textFill="#153448">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
