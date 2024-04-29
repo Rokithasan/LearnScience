@@ -13,61 +13,42 @@ import javafx.scene.input.Dragboard;
 import javafx.scene.input.TransferMode;
 
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.ResourceBundle;
+import java.util.*;
 
 public class LivingAndNonLiving implements Initializable {
 
     @FXML
     private ImageView images;
-
     @FXML
     private ImageView images1;
-
     @FXML
     private ImageView images2;
-
     @FXML
     private ImageView images3;
-
     @FXML
     private ImageView images4;
-
     @FXML
     private ImageView images5;
-
     @FXML
     private ImageView images6;
-
     @FXML
     private ImageView images7;
-
     @FXML
     private ImageView livingImage;
-
     @FXML
     private ImageView livingImage1;
-
     @FXML
     private ImageView livingImage2;
-
     @FXML
     private ImageView livingImage3;
-
     @FXML
     private ImageView nonLivingImage;
-
     @FXML
     private ImageView nonLivingImage1;
-
     @FXML
     private ImageView nonLivingImage2;
-
     @FXML
     private ImageView nonLivingImage3;
-
     @FXML
     private Label timerLabel;
 
@@ -78,7 +59,6 @@ public class LivingAndNonLiving implements Initializable {
 
     // List to store living images
     private List<Image> livingImages;
-
     // List to store non-living images
     private List<Image> nonLivingImages;
 
@@ -89,16 +69,20 @@ public class LivingAndNonLiving implements Initializable {
         nonLivingImages = new ArrayList<>();
 
         // Load living images
-        livingImages.add(new Image(getClass().getResource("/com/example/learnscience/PhotosData/Living/2.jpeg").toExternalForm()));
-        livingImages.add(new Image(getClass().getResource("/com/example/learnscience/PhotosData/Living/butterfly.jpeg").toExternalForm()));
-        livingImages.add(new Image(getClass().getResource("/com/example/learnscience/PhotosData/Living/cat.jpeg").toExternalForm()));
-        livingImages.add(new Image(getClass().getResource("/com/example/learnscience/PhotosData/Living/tiger.jpeg").toExternalForm()));
+        livingImages.addAll(Arrays.asList(
+                new Image(getClass().getResource("/com/example/learnscience/PhotosData/Living/2.jpeg").toExternalForm()),
+                new Image(getClass().getResource("/com/example/learnscience/PhotosData/Living/butterfly.jpeg").toExternalForm()),
+                new Image(getClass().getResource("/com/example/learnscience/PhotosData/Living/cat.jpeg").toExternalForm()),
+                new Image(getClass().getResource("/com/example/learnscience/PhotosData/Living/tiger.jpeg").toExternalForm())
+        ));
 
         // Load non-living images
-        nonLivingImages.add(new Image(getClass().getResource("/com/example/learnscience/PhotosData/NonLiving/doll.jpeg").toExternalForm()));
-        nonLivingImages.add(new Image(getClass().getResource("/com/example/learnscience/PhotosData/NonLiving/football.jpeg").toExternalForm()));
-        nonLivingImages.add(new Image(getClass().getResource("/com/example/learnscience/PhotosData/NonLiving/rocket.jpeg").toExternalForm()));
-        nonLivingImages.add(new Image(getClass().getResource("/com/example/learnscience/PhotosData/NonLiving/train.jpeg").toExternalForm()));
+        nonLivingImages.addAll(Arrays.asList(
+                new Image(getClass().getResource("/com/example/learnscience/PhotosData/NonLiving/doll.jpeg").toExternalForm()),
+                new Image(getClass().getResource("/com/example/learnscience/PhotosData/NonLiving/football.jpeg").toExternalForm()),
+                new Image(getClass().getResource("/com/example/learnscience/PhotosData/NonLiving/rocket.jpeg").toExternalForm()),
+                new Image(getClass().getResource("/com/example/learnscience/PhotosData/NonLiving/train.jpeg").toExternalForm())
+        ));
 
         // Shuffle the living images
         Collections.shuffle(livingImages);
@@ -185,33 +169,36 @@ public class LivingAndNonLiving implements Initializable {
 
     // Method to handle game end
     private void handleGameEnd() {
-        if (isCategoryFilled(livingImage) && isCategoryFilled(livingImage1) && isCategoryFilled(livingImage2) && isCategoryFilled(livingImage3) &&
-                isCategoryFilled(nonLivingImage) && isCategoryFilled(nonLivingImage1) && isCategoryFilled(nonLivingImage2) && isCategoryFilled(nonLivingImage3)) {
-            // All target areas are filled with the correct number of images
+        // Stop the timer
+        timer.stop();
+
+        // Check if all living images are in the correct target areas
+        boolean allLivingMatched = true;
+        for (ImageView imageView : Arrays.asList(livingImage, livingImage1, livingImage2, livingImage3)) {
+            if (!livingImages.contains(imageView.getImage())) {
+                allLivingMatched = false;
+                break;
+            }
+        }
+
+        // Check if all non-living images are in the correct target areas
+        boolean allNonLivingMatched = true;
+        for (ImageView imageView : Arrays.asList(nonLivingImage, nonLivingImage1, nonLivingImage2, nonLivingImage3)) {
+            if (!nonLivingImages.contains(imageView.getImage())) {
+                allNonLivingMatched = false;
+                break;
+            }
+        }
+
+        // If all living and non-living images are matched, show success message
+        if (allLivingMatched && allNonLivingMatched) {
             int score = calculateScore();
             showSuccessMessage(score);
         } else {
-            // Not all target areas are filled with the correct number of images
+            // If not all images are matched, show a failure message
             showFailureMessage();
         }
     }
-
-    // Helper method to check if a target area is filled with the correct number of images
-    private boolean isCategoryFilled(ImageView imageView) {
-        List<Image> categoryList;
-        if (isLivingCategory(imageView)) {
-            categoryList = livingImages;
-        } else {
-            categoryList = nonLivingImages;
-        }
-        return categoryList.contains(imageView.getImage());
-    }
-
-    // Helper method to check if a target area corresponds to the living category
-    private boolean isLivingCategory(ImageView imageView) {
-        return imageView == livingImage || imageView == livingImage1 || imageView == livingImage2 || imageView == livingImage3;
-    }
-
 
     // Method to calculate score
     private int calculateScore() {

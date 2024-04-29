@@ -73,13 +73,16 @@ public class Home implements Initializable {
                 e.printStackTrace();
             }
         });
-        mammalsImagesId.setOnMouseClicked(event->{
+
+       mammalsImagesId.setOnMouseClicked(event->{
             try {
                 loadFXML("mammals.fxml");
             } catch (IOException e) {
                 e.printStackTrace();
             }
         });
+
+
         planetsImagesId.setOnMouseClicked(event->{
             try {
                 loadFXML("palnets.fxml");
