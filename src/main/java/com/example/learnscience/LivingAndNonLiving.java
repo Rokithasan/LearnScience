@@ -88,30 +88,32 @@ public class LivingAndNonLiving implements Initializable {
         livingImages = new ArrayList<>();
         nonLivingImages = new ArrayList<>();
 
-        List<Image> allImages = new ArrayList<>();
         // Load living images
-        allImages.add(new Image(getClass().getResource("/com/example/learnscience/PhotosData/Living/2.jpeg").toExternalForm()));
-        allImages.add(new Image(getClass().getResource("/com/example/learnscience/PhotosData/Living/butterfly.jpeg").toExternalForm()));
-        allImages.add(new Image(getClass().getResource("/com/example/learnscience/PhotosData/Living/cat.jpeg").toExternalForm()));
-        allImages.add(new Image(getClass().getResource("/com/example/learnscience/PhotosData/Living/tiger.jpeg").toExternalForm()));
-        // Load non-living images
-        allImages.add(new Image(getClass().getResource("/com/example/learnscience/PhotosData/NonLiving/doll.jpeg").toExternalForm()));
-        allImages.add(new Image(getClass().getResource("/com/example/learnscience/PhotosData/NonLiving/football.jpeg").toExternalForm()));
-        allImages.add(new Image(getClass().getResource("/com/example/learnscience/PhotosData/NonLiving/rocket.jpeg").toExternalForm()));
-        allImages.add(new Image(getClass().getResource("/com/example/learnscience/PhotosData/NonLiving/train.jpeg").toExternalForm()));
+        livingImages.add(new Image(getClass().getResource("/com/example/learnscience/PhotosData/Living/2.jpeg").toExternalForm()));
+        livingImages.add(new Image(getClass().getResource("/com/example/learnscience/PhotosData/Living/butterfly.jpeg").toExternalForm()));
+        livingImages.add(new Image(getClass().getResource("/com/example/learnscience/PhotosData/Living/cat.jpeg").toExternalForm()));
+        livingImages.add(new Image(getClass().getResource("/com/example/learnscience/PhotosData/Living/tiger.jpeg").toExternalForm()));
 
-        // Shuffle the images for random showing
-        Collections.shuffle(allImages);
+        // Load non-living images
+        nonLivingImages.add(new Image(getClass().getResource("/com/example/learnscience/PhotosData/NonLiving/doll.jpeg").toExternalForm()));
+        nonLivingImages.add(new Image(getClass().getResource("/com/example/learnscience/PhotosData/NonLiving/football.jpeg").toExternalForm()));
+        nonLivingImages.add(new Image(getClass().getResource("/com/example/learnscience/PhotosData/NonLiving/rocket.jpeg").toExternalForm()));
+        nonLivingImages.add(new Image(getClass().getResource("/com/example/learnscience/PhotosData/NonLiving/train.jpeg").toExternalForm()));
+
+        // Shuffle the living images
+        Collections.shuffle(livingImages);
+        // Shuffle the non-living images
+        Collections.shuffle(nonLivingImages);
 
         // Set images to ImageViews
-        images.setImage(allImages.get(0));
-        images1.setImage(allImages.get(1));
-        images2.setImage(allImages.get(2));
-        images3.setImage(allImages.get(3));
-        images4.setImage(allImages.get(4));
-        images5.setImage(allImages.get(5));
-        images6.setImage(allImages.get(6));
-        images7.setImage(allImages.get(7));
+        images.setImage(livingImages.get(0));
+        images1.setImage(livingImages.get(1));
+        images2.setImage(livingImages.get(2));
+        images3.setImage(livingImages.get(3));
+        images4.setImage(nonLivingImages.get(0));
+        images5.setImage(nonLivingImages.get(1));
+        images6.setImage(nonLivingImages.get(2));
+        images7.setImage(nonLivingImages.get(3));
 
         // Add drag-and-drop handlers for the images ImageView
         addDragAndDropHandlersForImages(images, images1, images2, images3, images4, images5, images6, images7);
@@ -183,15 +185,33 @@ public class LivingAndNonLiving implements Initializable {
 
     // Method to handle game end
     private void handleGameEnd() {
-        if (correctMatches == totalImages) {
-            // Player matched all images, show success message with score
+        if (isCategoryFilled(livingImage) && isCategoryFilled(livingImage1) && isCategoryFilled(livingImage2) && isCategoryFilled(livingImage3) &&
+                isCategoryFilled(nonLivingImage) && isCategoryFilled(nonLivingImage1) && isCategoryFilled(nonLivingImage2) && isCategoryFilled(nonLivingImage3)) {
+            // All target areas are filled with the correct number of images
             int score = calculateScore();
             showSuccessMessage(score);
         } else {
-            // Player didn't match all images, show failure message
+            // Not all target areas are filled with the correct number of images
             showFailureMessage();
         }
     }
+
+    // Helper method to check if a target area is filled with the correct number of images
+    private boolean isCategoryFilled(ImageView imageView) {
+        List<Image> categoryList;
+        if (isLivingCategory(imageView)) {
+            categoryList = livingImages;
+        } else {
+            categoryList = nonLivingImages;
+        }
+        return categoryList.contains(imageView.getImage());
+    }
+
+    // Helper method to check if a target area corresponds to the living category
+    private boolean isLivingCategory(ImageView imageView) {
+        return imageView == livingImage || imageView == livingImage1 || imageView == livingImage2 || imageView == livingImage3;
+    }
+
 
     // Method to calculate score
     private int calculateScore() {
