@@ -10,7 +10,6 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.learnscience.LivingAndNonLiving">
    <children>
       <AnchorPane layoutX="77.0" layoutY="63.0" prefHeight="49.0" prefWidth="760.0" style="-fx-background-color: #153448;" AnchorPane.topAnchor="30.0">
@@ -117,14 +116,45 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
                <children>
-                  <ImageView fitHeight="78.0" fitWidth="187.0" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView fitHeight="79.0" fitWidth="188.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
-                  <ImageView fitHeight="79.0" fitWidth="187.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
-                  <ImageView fitHeight="79.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" />
-                  <ImageView fitHeight="75.0" fitWidth="188.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
-                  <ImageView fitHeight="75.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <ImageView fitHeight="79.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                  <ImageView fitHeight="69.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <ImageView fx:id="images" fitHeight="63.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <GridPane.margin>
+                        <Insets left="70.0" />
+                     </GridPane.margin></ImageView>
+                  <ImageView fx:id="images1" fitHeight="63.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets left="70.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fx:id="images2" fitHeight="63.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                     <GridPane.margin>
+                        <Insets left="70.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fx:id="images3" fitHeight="63.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                     <GridPane.margin>
+                        <Insets left="70.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fx:id="images4" fitHeight="63.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="70.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fx:id="images5" fitHeight="63.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="70.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fx:id="images6" fitHeight="63.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="70.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fx:id="images7" fitHeight="63.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="70.0" />
+                     </GridPane.margin>
+                  </ImageView>
                </children>
             </GridPane>
          </children>
